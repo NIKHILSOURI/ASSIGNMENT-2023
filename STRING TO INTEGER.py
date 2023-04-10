@@ -1,5 +1,5 @@
 class Solution:
-    def myAtoi(self, str: str) -> int:
+    def myAtoi(self, str):
         str = str.strip()
         if not str:
             return 0
@@ -15,3 +15,5 @@ class Solution:
             if res * sign <= -2**31:
                 return -2**31
         return res * sign
+obj=Solution()
+print(obj.myAtoi())
