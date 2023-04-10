@@ -1,5 +1,5 @@
 class Solution:
-    def calculate(self, s: str) -> int:
+    def calculate(self, s) :
         val_stack = []
         cur_num = 0
         total = 0
@@ -28,3 +28,5 @@ class Solution:
                 total += val_stack.pop()
         if cur_num: total += sign * cur_num
         return total
+obj=Solution()
+print(obj.calculate())
